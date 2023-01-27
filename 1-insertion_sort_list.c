@@ -1,11 +1,10 @@
 #include "sort.h"
 
 /**
-    * insertion_sort_list -  sorts a doubly linked list of integers in ascending
-      *                        order using the Insertion sort algorithm.
-        * @list: pointer to a doubly linked list pointer.
-	  *
-	    */
+* insertion_sort_list -  sorts a doubly linked list of integers in ascending
+* order using the Insertion sort algorithm.
+* @list: pointer to a doubly linked list pointer.
+*/
 
 void insertion_sort_list(listint_t **list)
 {
@@ -15,7 +14,7 @@ void insertion_sort_list(listint_t **list)
 		return;
 
 	node_swap = (*list)->next;
-
+	
 	while (node_swap != NULL)
 	{
 		swap_next = node_swap->next;
